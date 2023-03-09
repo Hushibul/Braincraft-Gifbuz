@@ -1,0 +1,30 @@
+@import "../../assets//sass/variables";
+.counterWrap {
+  position: relative;
+  margin: 60px 0;
+}
+
+.couterItem {
+  background-color: $sectionBgColor;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 15px;
+
+  h3 {
+    font-size: clamp(25px, 3vw, 75px);
+    margin-top: 5px;
+  }
+
+  p {
+    font-size: clamp(14px, 3vw, 28px);
+    color: $colorPrimary;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .counterWrap {
+    margin: 0 0 55px;
+  }
+}

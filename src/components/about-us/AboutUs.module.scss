@@ -1,0 +1,52 @@
+.aboutInfoWrap {
+  padding-top: 90px;
+  padding-bottom: 25px;
+
+  @media (max-width: 576px) {
+    padding: 40px 0;
+  }
+}
+
+.thumbsWrap {
+  z-index: 1;
+  gap: 20px;
+  .bgThumb {
+    bottom: -24px;
+    left: -46px;
+    z-index: -1;
+    max-width: 94%;
+  }
+
+  .rThumb img {
+    &:first-child {
+      margin-bottom: 18px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    gap: 10px;
+    .bgThumb {
+      bottom: 48px;
+      left: 0;
+      z-index: -1;
+      max-width: 50%;
+    }
+
+    .rThumb img {
+      &:first-child {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.aboutTextWrap {
+  margin-top: 37px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .aboutInfoWrap {
+    padding-bottom: 10px;
+  }
+}

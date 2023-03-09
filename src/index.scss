@@ -1,0 +1,126 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./assets/sass/variables";
+
+// @font-face {
+//   font-family: "Adobe Clean", sans-serif;
+//   font-style: normal;
+//   font-weight: 300;
+//   src: local("Adobe Clean"),
+//     url("./assets/fonts/AdobeCleanLight.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: "Adobe Clean", sans-serif;
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local("Adobe Clean"),
+//     url("./assets/fonts/AdobeCleanBold.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: "Adobe Clean", sans-serif;
+//   font-style: normal;
+//   font-weight: 900;
+//   src: local("Adobe Clean"),
+//     url("./assets/fonts/AdobeCleanBlack.woff") format("woff");
+// }
+
+body {
+  font-family: $fontFamily;
+  background-color: $black;
+}
+
+.title {
+  color: $white;
+  font-size: clamp(25px, 4vw, 35px);
+  font-weight: 900;
+  line-height: 45px;
+  margin: 30px 0 20px;
+}
+
+.subtitle {
+  color: $white;
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 700;
+  line-height: 40px;
+  margin: 10px 0;
+}
+
+.text {
+  color: $white;
+  font-size: clamp(14px, 3vw, 18px);
+  font-weight: 300;
+  line-height: clamp(25px, 5vw, 35px);
+}
+
+.term-policy {
+  p {
+    margin-left: -25px;
+  }
+}
+
+.privacy-policy {
+  .heading {
+    font-weight: 700;
+  }
+}
+
+.faq {
+  .accordion {
+    --bs-accordion-btn-icon: url("./assets/images/plus.svg");
+    --bs-accordion-btn-active-icon: url("./assets/images/minus.svg");
+    --bs-accordion-bg: #171717;
+    --bs-accordion-color: $white;
+    --bs-accordion-btn-color: $white;
+    --bs-accordion-border-color: $borderColor;
+    --bs-accordion-btn-focus-border-color: $white;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color: $white;
+    --bs-accordion-active-bg: #171717;
+    --bs-accordion-btn-icon-transition: transform 0.5s ease-in-out;
+    ul {
+      padding-left: 82px;
+
+      @media (max-width: 1200px) {
+        padding-left: 70px;
+      }
+
+      @media (max-width: 992px) {
+        padding-left: 65px;
+      }
+
+      @media (max-width: 768px) {
+        padding-left: 18px;
+      }
+    }
+  }
+
+  .accordion-button {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    width: auto;
+    gap: clamp(20px, 3vw, 50px);
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #171717;
+  }
+}
+
+.aboutUs__title {
+  font-size: clamp(30px, 5vw, 52px);
+  font-weight: 700;
+}
+.aboutUs__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.aboutUs__text {
+  font-size: clamp(14px, 3vw, 22px);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

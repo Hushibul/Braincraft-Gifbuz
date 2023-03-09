@@ -1,0 +1,74 @@
+@import "../../assets/sass/variables";
+
+.breadcrumb {
+  background-color: $breadcrumb-background;
+  padding: 45px 0;
+
+  &__heading {
+    color: $white;
+    font-size: clamp(20px, 5vw, 50px);
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  &__links {
+    color: $white;
+    font-size: clamp(10px, 3vw, 18px);
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
+  &__active {
+    color: $breadcrumb-links;
+  }
+}
+
+.breadfrequent {
+  background-color: $breadcrumb-background;
+  height: 250px;
+  position: relative;
+  &__heading {
+    color: $white;
+    font-size: clamp(20px, 5vw, 50px);
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  img {
+    position: absolute;
+    top: 20%;
+    left: -5%;
+    max-height: 200px;
+    width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .breadfrequent {
+    height: 200px;
+    img {
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .breadcrumb {
+    border-radius: 10px;
+  }
+  .breadfrequent {
+    border-radius: 10px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breadcrumb {
+    padding: 20px;
+  }
+
+  .breadfrequent {
+    height: 100px;
+  }
+}
