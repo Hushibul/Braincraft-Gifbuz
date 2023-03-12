@@ -78,6 +78,7 @@ body {
     --bs-accordion-active-color: $white;
     --bs-accordion-active-bg: #171717;
     --bs-accordion-btn-icon-transition: transform 0.5s ease-in-out;
+    --bs-accordion-btn-icon-transform: rotate(-180deg) translateY(10px);
     ul {
       padding-left: 82px;
 

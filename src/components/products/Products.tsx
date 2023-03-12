@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 
 const Products = () => {
   return (
-    <div className={`${Classes.products}`}>
+    <div className={`${Classes.products} mt-5`}>
       <div className={`${Classes.products__description} text-center`}>
         <h2 className="aboutUs__title text-light py-md-5 py-3">
           Some of Our Products
@@ -20,7 +20,7 @@ const Products = () => {
           <Col
             key={index}
             lg={6}
-            className="d-flex gap-2 gap-md-4 mt-1 mt-lg-3 align-items-center justify-content-center"
+            className="d-flex gap-2 gap-md-4 mt-1 mt-lg-3 align-items-center justify-content-sm-center"
           >
             <div>
               <img

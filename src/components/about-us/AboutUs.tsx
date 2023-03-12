@@ -16,21 +16,21 @@ const AboutUs = () => {
         <Col md={6} className={"pe-md-4 pe-lg-5"}>
           <div className={`d-flex ${Classes.thumbsWrap} position-relative`}>
             <div className={Classes.lThumb}>
-              <img src={Girl} alt="lThumb" className="img-fluid" />
+              <img src={Girl} alt="lThumb" className="img-fluid rounded-3" />
             </div>
             <div className={Classes.rThumb}>
               <img src={Dotted} alt="rThumbMini" />
-              <img src={Bean} alt="rThumb" className="img-fluid" />
+              <img src={Bean} alt="rThumb" className="img-fluid rounded" />
             </div>
             <div className={`${Classes.bgThumb} position-absolute`}>
               <img src={NetBg} alt="Net Bg" className="img-fluid" />
             </div>
           </div>
         </Col>
-        <Col md={6} className={"mt-3 mt-md-0"}>
+        <Col md={6} className={"mt-3 mt-md-0 text-center text-md-start"}>
           <div className={Classes.aboutTextWrap}>
-            <h6 className="aboutUs__subtitle">About Us</h6>
-            <h2 className="aboutUs__title">We inspire people to create</h2>
+            <h6 className="aboutUs__subtitle ">About Us</h6>
+            <h2 className="aboutUs__title py-2">We inspire people to create</h2>
             <p className="aboutUs__text mb-4">
               The first version of the app contained an “outfit tool” (or so we
               thought) that allowed people to choose a few photos, remove.

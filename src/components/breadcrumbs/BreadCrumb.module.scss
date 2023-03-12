@@ -17,8 +17,16 @@
     font-weight: 700;
     text-decoration: none;
 
-    &:hover {
+    &:not(:first-child) {
+      cursor: auto;
+    }
+
+    &:nth-child(2):hover {
       color: $white;
+    }
+
+    &:hover {
+      color: $breadcrumb-links;
     }
   }
   &__active {
