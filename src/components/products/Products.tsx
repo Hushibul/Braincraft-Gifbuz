@@ -29,7 +29,7 @@ const Products = () => {
                 alt="Product Apps"
               />
             </div>
-            <div className="pt-md-3 text-light">
+            <div className="pt-md-3 text-light pt-3">
               <h4 className={Classes.products__bold}>
                 GIF Maker - Make Video to GIFs 17+
               </h4>

@@ -37,7 +37,6 @@
         &:nth-child(2) {
           top: -10px;
           left: 30px;
-          // transform: rotate(10deg);
           z-index: 4;
         }
         &:nth-child(3) {
@@ -85,6 +84,9 @@
   .createGifUpload {
     .left {
       padding: 80px 20px;
+      p {
+        width: 100%;
+      }
     }
     .right {
       max-width: 90%;
@@ -97,8 +99,13 @@
 @media (max-width: 576px) {
   .createGifUpload {
     .right {
+      height: 400px;
+      margin: auto;
       .imageGroup {
-        max-width: 300px;
+        img {
+          margin: 20px 50px;
+          max-width: 45%;
+        }
       }
     }
   }

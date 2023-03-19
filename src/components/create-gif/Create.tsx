@@ -39,7 +39,7 @@ const Create = () => {
           sm={6}
         >
           <h2 className="createGif__title">Create Gif</h2>
-          <p className="createGif__paragraph pe-5">
+          <p className="createGif__paragraph pe-md-5">
             Select video/ Gif to edit Maximum 10 min video & less than 100MB are
             allowed.JPG, PNG, PSD, AI and SVG images up to 40 MB withat least
             3000 pixels along one side.
