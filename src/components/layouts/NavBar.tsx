@@ -15,7 +15,7 @@ const NavBar = () => {
             <Nav.Link className="text-light" as={Link} to="/about-us">
               About Us
             </Nav.Link>
-            <Nav.Link className="text-light" as={Link} to="/terms-of-services">
+            <Nav.Link className="text-light" as={Link} to="/terms-of-service">
               Terms of Services
             </Nav.Link>
             <Nav.Link
@@ -33,6 +33,12 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link className="text-light" as={Link} to="/faq">
               FAQ
+            </Nav.Link>
+            <Nav.Link className="text-light" as={Link} to="/create">
+              Create Gif
+            </Nav.Link>
+            <Nav.Link className="text-light" as={Link} to="/upload">
+              Upload Gif
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

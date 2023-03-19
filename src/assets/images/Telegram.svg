@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <filter id="Ellipse_89" x="0" y="0" width="84" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#f74f9e" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Telegram" transform="translate(-573 -4630)">
+    <g transform="matrix(1, 0, 0, 1, 573, 4630)" filter="url(#Ellipse_89)">
+      <circle id="Ellipse_89-2" data-name="Ellipse 89" cx="33" cy="33" r="33" transform="translate(9 6)" fill="#f74f9e"/>
+    </g>
+    <path id="noun-telegram-4137491" d="M131.257,50.59l-4.809,19.82a1.491,1.491,0,0,1-2.131.971l-6.082-3.14-2.876,4.7a1.491,1.491,0,0,1-2.763-.773V66.93a1.5,1.5,0,0,1,.462-1.075L124.912,54.54a.2.2,0,0,0-.311-.16l-14.143,9.844-4.752-2.452a1.489,1.489,0,0,1,.085-2.687l23.431-10.211a1.487,1.487,0,0,1,2.037,1.716Z" transform="translate(496.899 4607.797)" fill="#fff"/>
+  </g>
+</svg>

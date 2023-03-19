@@ -1,0 +1,105 @@
+@import "../../assets//sass/variables";
+
+.createGifUpload {
+  background-color: $inputBgHoverColor;
+  // padding-top: 100px;
+  .left {
+    padding: 160px 0 0 100px;
+    p {
+      width: 75%;
+    }
+  }
+  .right {
+    position: relative;
+    height: 700px;
+
+    .imageGroup {
+      transition: all 0.5s;
+      max-width: 100%;
+      height: auto;
+
+      img {
+        margin-top: 100px;
+        margin-left: 100px;
+        max-width: 100%;
+        height: auto;
+
+        position: absolute;
+        border-radius: 20px;
+        transition: all 1s;
+
+        &:first-child {
+          top: 0;
+          left: 0;
+          transform: rotate(-10deg);
+          z-index: 5;
+        }
+        &:nth-child(2) {
+          top: -10px;
+          left: 30px;
+          // transform: rotate(10deg);
+          z-index: 4;
+        }
+        &:nth-child(3) {
+          top: -20px;
+          left: 50px;
+          transform: rotate(10deg);
+          z-index: 3;
+        }
+        &:nth-child(4) {
+          top: -10px;
+          left: 70px;
+          transform: rotate(20deg);
+          z-index: 2;
+        }
+        &:nth-child(5) {
+          top: -20;
+          left: 100px;
+          transform: rotate(30deg);
+        }
+      }
+      &:hover {
+        img {
+          &:first-child {
+            transform: rotate(-45deg) translate(-50px, 50px);
+          }
+          &:nth-child(2) {
+            transform: rotate(-30deg) translate(-25px, 20px);
+          }
+          &:nth-child(3) {
+            transform: rotate(0) translateY(-40px);
+          }
+          &:nth-child(4) {
+            transform: rotate(30deg) translate(35px, -35px);
+          }
+          &:nth-child(5) {
+            transform: rotate(45deg) translate(40px, -50px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .createGifUpload {
+    .left {
+      padding: 80px 20px;
+    }
+    .right {
+      max-width: 90%;
+      margin-left: 0;
+      // height: auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .createGifUpload {
+    .right {
+      .imageGroup {
+        max-width: 300px;
+      }
+    }
+  }
+}

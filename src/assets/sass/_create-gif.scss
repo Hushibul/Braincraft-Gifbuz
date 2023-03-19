@@ -1,0 +1,45 @@
+.createGif {
+  background-image: url("../images/BlobOne.svg"), url("../images/BlobTwo.svg"),
+    url("../images/BlobThree.svg"), url("../images/BlobFour.svg");
+  background-size: 30%, 30%, 30%, 30%;
+  background-position: -150px -280px, 110% -300px, -150px 50vh, 110% 50vh;
+  background-repeat: no-repeat;
+}
+
+.createGif__title {
+  font-size: clamp(30px, 3vw, 44px);
+  color: $white;
+  font-weight: 900;
+}
+
+.createGif__subtitle {
+  font-size: clamp(18px, 3vw, 25px);
+  color: $white;
+  font-weight: 700;
+}
+
+.createGif__paragraph {
+  font-size: clamp(14px, 3vw, 18px);
+  color: $white;
+  line-height: 30px;
+}
+
+.createGif__btn {
+  border: 1px solid $borderColor;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+  background-color: transparent;
+  border-radius: 25px;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $borderColor;
+  }
+}
+
+@media (max-width: 992px) {
+  .createGif {
+    background-image: none;
+  }
+}

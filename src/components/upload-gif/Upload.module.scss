@@ -1,0 +1,70 @@
+@import "../../assets/sass/variables";
+.upload {
+  padding-top: 60px;
+  padding-left: 100px;
+  height: 100dvh;
+  &__label {
+    border: 2px dashed $borderColor;
+    width: 60%;
+    height: 200px;
+    padding-top: 30px;
+
+    p {
+      color: $borderColor;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  &__text {
+    padding-right: 100px;
+  }
+
+  &__scrollDown {
+    height: 100px;
+    cursor: pointer;
+    animation: ScrollDown 1s ease;
+    animation-iteration-count: infinite;
+  }
+}
+
+@media (max-width: 1200px) {
+  .upload {
+    &__text {
+      padding-right: 0px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .upload {
+    padding-left: 0px;
+    &__label {
+      margin-left: 10px;
+    }
+    &__text {
+      padding-right: 10px;
+    }
+  }
+}
+
+//Animation
+@keyframes ScrollDown {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

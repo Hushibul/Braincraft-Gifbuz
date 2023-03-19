@@ -1,0 +1,54 @@
+@import "../../assets//sass/variables";
+.createOwnGif {
+  margin-bottom: 120px;
+  &__imageGroup {
+    position: relative;
+    .main {
+      max-width: 100%;
+      height: auto;
+      filter: drop-shadow(30px 20px 5px #171717);
+    }
+    .sub {
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+    .createButton {
+      position: absolute;
+      top: 50%;
+      right: 150px;
+      transform: translateY(-50%);
+      z-index: 100;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .createOwnGif {
+    &__imageGroup {
+      .createButton {
+        right: -20px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .createOwnGif {
+    &__imageGroup {
+      .createButton {
+        right: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .createOwnGif {
+    &__imageGroup {
+      .createButton {
+        right: -20px;
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
 import { Container } from "react-bootstrap";
-import BreadCrumb from "../components/breadcrumbs/BreadCrumb";
 
 import ScreenShotOne from "../assets/images/ss1.png";
 import ScreenShotTwo from "../assets/images/ss2.png";
+import Hero from "../components/hero/Hero";
 
 const PrivacyPolicy = () => {
   return (
     <Container>
-      <BreadCrumb />
+      <Hero link="Privacy Policy" breadcrumb={true} />
       <div>
         <h2 className="title">Privacy Policy</h2>
         <p className="text">

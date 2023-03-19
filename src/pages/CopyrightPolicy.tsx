@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
-import BreadCrumb from "../components/breadcrumbs/BreadCrumb";
+import Hero from "../components/hero/Hero";
 
 const CopyrightPolicy = () => {
   return (
     <Container>
-      <BreadCrumb />
+      <Hero link="Copyright Policy" breadcrumb={true} />
       <div>
         <h2 className="title">Copyright Policy</h2>
         <p className="text">

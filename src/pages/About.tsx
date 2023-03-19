@@ -1,15 +1,15 @@
 import { Container } from "react-bootstrap";
-import BreadCrumb from "../components/breadcrumbs/BreadCrumb";
 
 import AboutUs from "../components/about-us/AboutUs";
 import Counter from "../components/counter/Counter";
 import Team from "../components/team/Team";
 import Products from "../components/products/Products";
+import Hero from "../components/hero/Hero";
 
 const About = () => {
   return (
     <Container>
-      <BreadCrumb />
+      <Hero link="About Us" breadcrumb={true} />
       <AboutUs />
 
       <Counter />

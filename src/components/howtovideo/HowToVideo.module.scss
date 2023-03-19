@@ -1,0 +1,20 @@
+.howTo {
+  margin-bottom: 200px;
+  &__heading {
+    p {
+      margin: 10px auto 100px;
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .howTo {
+    &__heading {
+      p {
+        margin: 10px auto 50px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
-import BreadCrumb from "../components/breadcrumbs/BreadCrumb";
+import Hero from "../components/hero/Hero";
 
 const TermOfServices = () => {
   return (
     <Container>
-      <BreadCrumb />
+      <Hero link="Terms of Service" breadcrumb={true} />
       <div>
         <h2 className="title">Terms of Service</h2>
         <p className="text">

@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
-import BreadCrumb from "../components/breadcrumbs/BreadCrumb";
+import Hero from "../components/hero/Hero";
 
 const ComunityGuidelines = () => {
   return (
     <Container>
-      <BreadCrumb />
+      <Hero link="Community Guidelines" breadcrumb={true} />
       <div>
         <h2 className="title">GIFBUZ Community Guidelines</h2>
         <p className="text ms-1">
